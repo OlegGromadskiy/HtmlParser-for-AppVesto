@@ -1,0 +1,9 @@
+﻿<Application x:Class="HtmlParser_AppVestoTestTask_.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:HtmlParser_AppVestoTestTask_"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <local:VM x:Key="VM"/>
+    </Application.Resources>
+</Application>

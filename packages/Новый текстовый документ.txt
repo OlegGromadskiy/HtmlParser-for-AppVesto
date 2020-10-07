@@ -1,0 +1,35 @@
+<Window.Resources>
+        <Style TargetType="Label">
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#2D2D30"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="350"/>
+        </Grid.ColumnDefinitions>
+        <UniformGrid Name="Desk">
+
+        </UniformGrid>
+        <Grid Grid.Column="1" Background="#FF252625">
+            <Grid.Resources>
+                <Style TargetType="TextBlock">
+                    <Setter Property="Foreground" Value="#FF20D198"/>
+                </Style>
+            </Grid.Resources>
+            <Grid Margin="100,95,116,290">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="7*"/>
+                    <RowDefinition/>
+                    <RowDefinition Height="9*"/>
+                </Grid.RowDefinitions>
+                <Slider Grid.Row="2"/>
+                <TextBlock TextWrapping="Wrap" Text="Pace:"/>
+            </Grid>
+            <Label Content="Start" Margin="122,236,193,158" BorderThickness="0" Background="Transparent" Foreground="#FF20D198" Padding="0"/>
+        </Grid>
+    </Grid>
